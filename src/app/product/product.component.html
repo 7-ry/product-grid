@@ -3,7 +3,19 @@
         <img src="{{ product.imageUrl}}" alt="..." class="card-img">
         <h5 class="title">{{ product.name }}</h5>
         <p class="price">${{ product.price}}</p>
-        <button class="btn">Add to Cart</button>
+        <button class="btn" (click)="addToCart(product)">Add to Cart</button>
         <p class="desc">{{ product.description }}</p>
     </div>
+</div>
+
+<div class="cart-section" *ngIf="cart.length > 0">
+    <!-- カートの中身を表示するエリア -->
+    <h3 class="cartTitle">Cart</h3>
+    <ul>
+        <li *ngFor="let item of cart; let i = index">
+            <p>{{ item.name }} - ${{ item.price }}</p>
+            <button (click)="removeFromCart(i)">Remove</button>
+        </li>
+    </ul>
+    <p><strong>Total:</strong> ${{ getTotal() }}</p>
 </div>

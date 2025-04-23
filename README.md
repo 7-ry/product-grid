@@ -17,6 +17,10 @@ It mimics an e-commerce-style layout where each product is displayed as a card c
   - Action button ("Add to Cart")
 - Clean hover effects and consistent styling
 - Mobile-first responsive design
+- Add products to a cart using a dynamic button
+- View cart contents with item name and price
+- Remove items from the cart
+- Display total price based on cart contents
 
 ---
 
@@ -26,6 +30,16 @@ It mimics an e-commerce-style layout where each product is displayed as a card c
 - TypeScript
 - SCSS (Sass)
 - CSS Grid & Flexbox
+
+---
+
+## 📚 What I Learned
+
+- Managing application state inside a component (cart system)
+- Using `(click)` event binding to trigger cart actions
+- Leveraging `*ngIf` and `*ngFor` with `let i = index` for list rendering and actions
+- Calculating dynamic values (total price) using component methods
+- Styling layout with SCSS for a clean and responsive cart UI
 
 ---
 

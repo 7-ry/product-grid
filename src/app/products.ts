@@ -1,3 +1,10 @@
+export interface Product {
+    name: string;
+    description: string;
+    price: number;
+    imageUrl: string;
+}
+
 export const products = [
     {
         coverImage: '../../../assets/img/phone-cover.jpg',
